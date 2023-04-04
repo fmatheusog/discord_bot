@@ -1,5 +1,5 @@
 import { Command } from '../interfaces/Command';
-import { AddMessage } from './AddMessage';
-import { RussianRoulette } from './RussianRoulette';
+import { Confession } from './AddMessage';
+import { RandomKick } from './RandomKick';
 
-export const CommandList: Command[] = [ AddMessage, RussianRoulette ];
+export const CommandList: Command[] = [ Confession, RandomKick ];

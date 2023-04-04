@@ -2,7 +2,7 @@ import { SlashCommandBuilder } from '@discordjs/builders';
 import { EmbedBuilder, TextChannel } from 'discord.js';
 import { Command } from '../interfaces/Command';
 
-export const AddMessage: Command = {
+export const Confession: Command = {
   data: new SlashCommandBuilder()
     .setName('confessar')
     .setDescription('Envia confissão pra ser postada no respectivo canal do servidor')
