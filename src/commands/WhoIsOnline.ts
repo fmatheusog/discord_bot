@@ -9,10 +9,9 @@ export const WhoIsOnline: Command = {
     const members = await interaction.guild?.members.fetch();
     const onlineMembers = members
       ?.filter((m) => m.presence?.status !== undefined && m.presence?.status !== 'offline')
-      .map((m) => m.displayName);
+      .map((m) => m.displayName)
+      .join(`\n`);
 
-    const response = onlineMembers?.join(`\n`);
-
-    await interaction.reply(response as string);
+    await interaction.reply(onlineMembers as string);
   }
 }
